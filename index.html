@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Agenda</title>
+
+    <link type="text/css" rel="stylesheet" href="css/style.css ">
+</head>
+<body>
+    <h1>Phone Agenda</h1>
+
+    <h3>Contacts</h3>
+    <form id="create-contact-form">
+        <label for="firstName-field">First Name</label>
+        <input type="text" id="firstName-field" placeholder="Enter first name...">
+
+        <label for="secondName-field">Second Name</label>
+        <input type="text" id="secondName-field" placeholder="Enter second name...">
+
+        <label for="phoneNumber-field">Phone Number</label>
+        <input type="text" id="phoneNumber-field" placeholder="Enter number phone...">
+
+    </form>
+
+    <table id="phone-agenda">
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Second Name</th>
+            <th>Phone Number</th>
+            <th>Edit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bunea</td>
+            <td>Viorel</td>
+            <td>745634578</td>
+            <td>
+                <input type="submit" data-id=1>
+            </td>
+            <td>
+                <a href="#" class="delete-contact" data-id=1>Delete</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Badea</td>
+            <td>Gheorghe</td>
+            <td>746337878</td>
+             <td>
+                <input type="submit" data-id=2>
+            </td>
+            <td>
+                <a href="#" class="delete-contact" data-id=2>Delete</a>
+            </td>
+        </tr> <tr>
+            <td>Billy</td>
+            <td>Joe</td>
+            <td>743723628</td>
+            <td>
+                <input type="submit" data-id=3>
+            </td>
+            <td>
+                <a href="#" class="delete-contact" data-id=3>Delete</a>
+            </td>
+        </tr>
+
+
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>
