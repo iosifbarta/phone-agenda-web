@@ -5,6 +5,8 @@
     <title>Phone Agenda</title>
 
     <link type="text/css" rel="stylesheet" href="css/style.css ">
+    <script src="https://kit.fontawesome.com/4048884fe3.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <h1>Phone Agenda</h1>
@@ -19,6 +21,9 @@
 
         <label for="phoneNumber-field">Phone Number</label>
         <input type="text" id="phoneNumber-field" placeholder="Enter number phone...">
+        <input type="text" id="email-field" placeholder="Email format abcdg@dfgh.com, .etc">
+
+        <input type="submit"  value="Save">
 
     </form>
 
@@ -28,7 +33,10 @@
             <th>First Name</th>
             <th>Second Name</th>
             <th>Phone Number</th>
+            <th>Email</th>
             <th>Edit</th>
+            <th>Delete</th>
+
         </tr>
         </thead>
         <tbody>
@@ -37,10 +45,12 @@
             <td>Viorel</td>
             <td>745634578</td>
             <td>
-                <input type="submit" data-id=1>
+                <input type="submit" value="Edit" data-id=1>
             </td>
             <td>
-                <a href="#" class="delete-contact" data-id=1>Delete</a>
+                <a href="#" class="delete-contact" data-id=1>
+                    <i class="far fa-trash-alt"></i>
+                </a>
             </td>
         </tr>
         <tr>
@@ -48,20 +58,24 @@
             <td>Gheorghe</td>
             <td>746337878</td>
              <td>
-                <input type="submit" data-id=2>
+                <input type="submit" value="Edit" data-id=2>
             </td>
             <td>
-                <a href="#" class="delete-contact" data-id=2>Delete</a>
+                <a href="#" class="delete-contact" data-id=2>
+                    <i class="far fa-trash-alt"></i>
+                </a>
             </td>
         </tr> <tr>
             <td>Billy</td>
             <td>Joe</td>
             <td>743723628</td>
             <td>
-                <input type="submit" data-id=3>
+                <input type="submit" value="Edit" data-id=3>
             </td>
             <td>
-                <a href="#" class="delete-contact" data-id=3>Delete</a>
+                <a href="#" class="delete-contact" data-id=3>
+                    <i class="far fa-trash-alt"></i>
+                </a>
             </td>
         </tr>
 
@@ -70,6 +84,8 @@
         </tbody>
 
     </table>
+    <script src="js/library/jquery-3.5.1.js"></script>
+    <script src="js/phoneAgenda.js"></script>
 
 </body>
 </html>
